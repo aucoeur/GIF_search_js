@@ -2,8 +2,11 @@ const searchForm = document.getElementById('search')
 const inputSearch = document.getElementById('input-search')
 const container = document.getElementById('container')
 
-
 searchForm.addEventListener('submit', submitSearch)
+
+function defaultDisplay() {
+  fetchData('rpdr')
+}
 
 function submitSearch(e) {
   // Get the value input in the search input
@@ -33,7 +36,7 @@ function handleData(json) {
   // Define a string to hold some html
   let htmlStr = ''
   // Loop over the array
-  for (let i = 0; i < data.length; i += 1) {
+  for (let i = 0; i < data.length; i++) {
 
     // get the url to an image - we'll use the fixed_width_small
     const image = data[i].images.fixed_height_small

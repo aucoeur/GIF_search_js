@@ -7,14 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body onload="defaultDisplay()"">
     <main>
         <header>
             <h1>GIF Search</h1>
         </header>
         <form id="search">
+            <div class="row">
             <input id="input-search" placeholder="Search">
-            <button type="submit" style="background-color: rgba(61, 171, 218, 0.776);">Submit</button>
+            <button type="submit">Submit</button>
+            </div>
         </form><br>
         <div class="gif-container" id="container"></div>
     </main>
