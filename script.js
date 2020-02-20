@@ -46,8 +46,7 @@ function handleData(json) {
     const height = image.height
     // add img tags to the htmlStr
     htmlStr += `<img src="${src}" width="${width}" height="${height}">`
-
-    }
+  }
 
 // Set the innHTML of #container
 container.innerHTML = htmlStr
